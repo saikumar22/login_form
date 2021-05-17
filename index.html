@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .container{
+        margin-left: 400px;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Registration form</h1>
+        <form class="form" action="app.php" method="post">
+            <label> Name: </label>
+            <input type="text" name="name" required><br><br>
+            <label> Roll No: </label>
+            <input type="text" name="rollno" required><br><br>
+            <label> Mobile: </label>
+            <input type="text" name="mobile" required><br><br>
+            <label> Email: </label>
+            <input type="text" name="email" required><br><br>
+            <!-- <input type="submit" name="register"> -->
+            <button class='btn btn-primary' type="submit" name="register">Submit</button>
+        </form>
+        <br>
+        <a href="app.php"><button class="btn btn-success btn-lg">list</button> </a>
+    </div>
+</body>
+
+</html>
